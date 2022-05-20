@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="bs5/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+
+    <!-- left sec start here -->
+    <div class="left bg-dark">
+        <div class="container">
+            <div class="row">
+
+                <h1 class="text-danger text-center">Shuvo Restaurant</h1>
+
+                <div class="col-lg-7 col-xl-7 col-xxl-7 col-md-7 col-lg-10 col-sm-12 col-12 left-sec">
+                    <div class="left-img">
+                        <img src="img/web pic06.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="right-text">
+                        <h4>Chicken Pizza</h4>
+                        <h4>Size: 6</h4>
+                        <h4>Price: $ <span id="price">220</span></h4>
+                        <!-- <i class="fa fa-minus minus" id="decrement" aria-hidden="true"></i> -->
+                        <i class="fa fa-minus minus" onclick="decrement('counter', 'price', 'item', 'product-amount')"  aria-hidden="true"></i>
+                        <!-- <div class="count" id="counter" >0</div> -->
+                        <input type="button" class="count" id="counter" value="0">
+                        <!-- <i class="fa fa-plus plus"  aria-hidden="true" id="plus-inc"></i> -->
+                        <i class="fa fa-plus plus" onclick="increment('counter', 'price', 'item', 'product-amount')"  aria-hidden="true"></i>
+                        <h4>Your Item Total: $ <span id="item">00</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-xl-7 col-xxl-7 col-md-7 col-lg-10 col-sm-12 col-12 left-sec">
+                    <div class="left-img">
+                        <img src="img/web pic10.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="right-text">
+                        <h4>Chicken Burger</h4>
+                        <h4>Size: 6</h4>
+                        <h4>Price: $ <span id="price1">880</span></h4>
+                        <!-- <i class="fa fa-minus minus" id="decrement" aria-hidden="true"></i> -->
+                        <i class="fa fa-minus minus" onclick="decrement('counter1', 'price1', 'item1', 'product-amount')"  aria-hidden="true"></i>
+                        <!-- <div class="count" id="counter" >0</div> -->
+                        <input type="button" class="count" id="counter1" value="0">
+                        <!-- <i class="fa fa-plus plus"  aria-hidden="true" id="plus-inc"></i> -->
+                        <i class="fa fa-plus plus" onclick="increment('counter1', 'price1', 'item1', 'product-amount')"  aria-hidden="true"></i>
+                        <h4>Your Item Total: $ <span id="item1">00</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-xl-7 col-xxl-7 col-md-7 col-lg-10 col-sm-12 col-12 left-sec">
+                    <div class="left-img">
+                        <img src="img/web pic09.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="right-text">
+                        <h4>Honey</h4>
+                        <h4>Size: 6</h4>
+                        <h4>Price: $ <span id="price2">1299</span></h4>
+                        <!-- <i class="fa fa-minus minus" id="decrement" aria-hidden="true"></i> -->
+                        <i class="fa fa-minus minus" onclick="decrement('counter2', 'price2', 'item2', 'product-amount')"  aria-hidden="true"></i>
+                        <!-- <div class="count" id="counter" >0</div> -->
+                        <input type="button" class="count" id="counter2" value="0">
+                        <!-- <i class="fa fa-plus plus"  aria-hidden="true" id="plus-inc"></i> -->
+                        <i class="fa fa-plus plus" onclick="increment('counter2', 'price2', 'item2', 'product-amount')"  aria-hidden="true"></i>
+                        <h4>Your Item Total: $ <span id="item2">00</span></h5>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+
+                <!-- right sec start here -->
+
+                <div class="col-lg-4 col-xl-4 col-xxl-4 col-md-4 col-sm-10 col-10 right-sec">
+                    <h1>The amount of</h1>
+                    <h2>Product Amount: $ <span id="product-amount">00</span></h2>
+                    <h2>Delivery charge: $ <span id="delivary-crg">20</span></h2>
+                    <hr>
+                    <h2>Total product amount: $ <span id="total-p-amount">00</span></h2>
+                    <div id="cupon-code-wrapper">
+                        <p class="mt-5 text-primary">Cupon Code</p>
+                        <p>50TK less..Your Coupon code is : <span class="text-success">shuvo deb</span></p>
+                        <input id="cupon-text" type="text" value="shuvo deb">
+                        <button class="cup-btn" id="cupon-btn">Apply Coupon</button>
+                    </div>
+                </div>
+                <!-- right sec end here -->
+            </div>
+        </div>
+    </div>
+    <!-- left sec end here -->
+
+
+
+    
+
+
+    
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="bs5/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
